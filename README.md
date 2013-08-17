@@ -1,6 +1,7 @@
 # TencentWeibo
 
-这是[腾讯微博](http://t.qq.com/)的一个ruby sdk，灵感来自于新浪微博的一个ruby gem[link](https://github.com/simsicon/weibo_2)
+这是[腾讯微博](http://t.qq.com/)的一个ruby sdk，灵感来自于新浪微博的一个ruby gem([link](https://github.com/simsicon/weibo_2))。
+
 目前只实现了关系链接口，微博接口，微博接口，名单接口, 并且没有推送到ruby gem上。
 
 ## 安装
@@ -14,7 +15,24 @@
 
 ## 使用
 
-api参考腾讯微博开放平台[link](http://wiki.open.t.qq.com/index.php/API%E6%96%87%E6%A1%A3)
+1. Config:
+
+    
+    TencentWeibo::Config.api_key = YOUR_KEY
+    TencentWeibo::Config.api_secret = YOUR_SECRET
+    TencentWeibo::Config.redirect_uri = YOUR_CALLBACK_URL   
+
+2. 初始化Client:
+
+    client = TencentWeibo::Client.new
+
+3. 使用api:
+
+    client.t_weibo.add(opts={....})
+
+4. api参考腾讯微博开放平台([link](http://wiki.open.t.qq.com/index.php/API%E6%96%87%E6%A1%A3))
+
+
 
 ## Contributing
 

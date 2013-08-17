@@ -6,11 +6,11 @@ require 'tencent_weibo/version'
 Gem::Specification.new do |spec|
   spec.name          = "tencent_weibo"
   spec.version       = TencentWeibo::Version
-  spec.authors       = ["gary.zeng"]
-  spec.email         = ["gary.zeng@suryani.cn"]
+  spec.authors       = ["ZGY"]
+  spec.email         = ["pid.zeng@gmail.com"]
   spec.description   = %q{tencent_weibo is a Ruby gem that provides a wrapper for interacting with tencent weibo API}
   spec.summary       = %q{A oauth2 gem for tencent microblog}
-  spec.homepage      = "http://www.suryani.cn"
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = Dir.glob("lib/**/*.rb")
