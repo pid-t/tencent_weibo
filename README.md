@@ -17,18 +17,23 @@
 
 1. Config:
 
-    
+    ```ruby
     TencentWeibo::Config.api_key = YOUR_KEY
     TencentWeibo::Config.api_secret = YOUR_SECRET
-    TencentWeibo::Config.redirect_uri = YOUR_CALLBACK_URL   
+    TencentWeibo::Config.redirect_uri = YOUR_CALLBACK_URL
+    ```
 
 2. 初始化Client:
 
+    ```ruby
     client = TencentWeibo::Client.new
+    ```
 
 3. 使用api:
 
+    ```ruby
     client.t_weibo.add(opts={....})
+    ```
 
 4. api参考腾讯微博开放平台([link](http://wiki.open.t.qq.com/index.php/API%E6%96%87%E6%A1%A3))
 
